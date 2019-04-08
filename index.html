@@ -1,0 +1,213 @@
+<!doctype html> 
+<html>
+	<head> 
+		<title>Monkeys</title> 
+		<title>Website</title> 
+		<meta name="description" content="HTML tutorial"> 	
+		<meta name="keywords"
+		content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="VLAD">
+		<meta http-equiv="refresh" content="30">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="ex2.css">
+		
+	</head> 
+		
+	<body> 
+	<header>
+	<a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+        </svg>
+    </a>
+		
+		
+         <div id="drawer">
+<nav>
+				<a href="#Smile"> Smile</a>
+				<br>
+				<a href="#Nose"> Nose</a>
+				<br>
+				<a href="#Video"> Video</a>
+		</nav>
+	</div>
+		
+		<h1>Monkeys?</h1>    
+			<p> I love Monkeys ? </p>
+			<h4> makakada portfolio </h4>
+			
+		
+			</header>
+			
+<nav id="tabletPC" class="col-3">
+    <a href="#Smile"> Smile</a>
+    <br>
+    <a href="#Nose"> Nose</a>
+    <br>
+    <a href="#Video"> Video</a>
+    
+</nav>
+	
+		
+			<div id="container" class="col-9">
+			
+					<section class="slideshow-container">
+					<h2>HTML Slideshow</h2>
+					
+				<article class="mySlides" class="fade"> 
+					<figure>
+					<img src="img/maka 1.jpg"> 
+					<figcaption>Figure 1: Runningto learnHTML5!</figcaption> 
+					</figure>
+				</article>
+					
+				<article class="mySlides" class="fade">
+					<figure> 
+					<img src="img/maka 2.jpg"> 
+					<figcaption>Figure 2: LearningHTML5 istoo easy...</figcaption>
+					</figure> 
+				</article>
+				
+				<article class="mySlides" class="fade"> 
+					<figure> 
+					<img src="img/maka 3.jpg">
+					<figcaption>Figure 3: Are youhavingdifficultieswithHTML5?</figcaption> 
+					</figure>
+				</article>
+				
+				<div class="dotpoints"> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+				</div> 
+				</section>
+				 <br>
+				
+		<section>
+			<h2> Unordered List Tag </h2>
+			<i>The language is made up of a set of codes and symbols that will generate:</i> 		
+			<ul>
+				<li> text </li> 
+				<li> images</li> 
+				<li> sounds</li> 
+				<li> frames </li>
+				<li> animation on your browser pages
+				</li> 
+			</ul> 
+				 
+		</section>
+		
+
+			
+			<br>
+		
+		<section>	
+			<h2> Ordered List Tag </h2>
+			<i> Two common ways to start </i>
+			<ol>
+				<li><u> to create your </u></li> 
+				<li><u> Use HTML generator </u></li>
+			</ol> 
+		</section>
+		
+			<br>
+		<section>
+			<a name="Smile">
+			<h2>Beauty of monkeys</h2>
+			<p> Smile </p> 
+			
+			<br>
+		
+			<img src= "https://ichef.bbci.co.uk/news/660/cpsprodpb/025B/production/_85730600_monkey2.jpg" width= "800"; height= "800">
+		
+			<br>
+			<br>
+			<br>
+			<a name= "Nose">
+			<img src = "https://news.nationalgeographic.com/content/dam/news/2018/02/20/proboscis-monkey/01-proboscis-monkey-NationalGeographic_2684060.ngsversion.1519241409222.adapt.1900.1.jpg" width= "800"; height = "800">
+		
+			<br>
+		</section>
+			<br>
+			<br>
+			
+		<section>
+			<a name="Video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CKCEmrMPm1s" 
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		
+		</section>
+		<br>
+		<br>
+		
+		<section>	
+			<table border= "5px"> 
+			<th colspan= "4"> Heading </th> 
+			<tr>
+				<td> Column 1 </td> <td> Column 2 </td> <td> Column 3 </td> <td> Column 4 </td>
+			</tr> 
+			<tr>
+				<td rowspan= "4"> Cell Spanning in 3 Rows (2nd and 3rd merged )</td> 
+				<td rowspan="3"> Cell Spanning in 2 Rows (1st and 2nd Cellmerged ) </td>
+				<td> 1st Cell </td> 
+			</tr>
+			<tr>
+				<td> 2nd Cell </td> 
+				</tr>
+				<td> 3rd Cell </td> 
+				</tr> 
+				<td> 3rd Cell </td> <td> 4th Cell </td> 
+				<td> 4rd Cell </td> <td> 5th Cell </td>
+				</tr> 
+			</table>
+		
+		</section>
+		</div>
+		
+		<aside class="col-2"> 
+			<h3>Aside</h3> 
+			<p>Esta zona serve para colocar informacao menos relevante </p> 
+		</aside> 
+		
+		<footer> 
+			<h2>Developed by Vlad Bochko</h2> 
+		</footer>
+		
+	<script>    
+	var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i = null;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1000); // Change image every 4 seconds
+    }
+    var menu_icon = document.querySelector('#menu_icon');
+    var container = document.querySelector('#container');
+    var drawer = document.querySelector('#drawer');
+    menu_icon.addEventListener('click', function (e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+    container.addEventListener('click', function () {
+        drawer.classList.remove('open');
+    }); 
+	
+	</script>
+
+	</body> 
+</html>
